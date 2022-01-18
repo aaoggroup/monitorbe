@@ -24,5 +24,6 @@
     "express": "^4.17.2",
     "node-image-downloader": "^1.0.7",
     "nodemon": "^2.0.15"
-  }
+  },
+  "engines": {"node": "14.18.0"}
 }

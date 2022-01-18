@@ -40,4 +40,4 @@ app.get("/", async (req, res) => {
   res.sendFile(path.join(__dirname, "/ad-display.html"));
 });
 
-app.listen(4000);
+app.listen(process.env.PORT || 4000);
