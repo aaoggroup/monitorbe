@@ -40,6 +40,4 @@ app.get("/", async (req, res) => {
   res.sendFile(path.join(__dirname, "/ad-display.html"));
 });
 
-app.listen(4000, "localhost", async () => {
-  console.log("Running monitor on port 4000.");
-});
+app.listen(4000);
