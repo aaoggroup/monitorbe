@@ -2,16 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="3" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Running Ad Display</title>
   </head>
   <body>
-    <!-- <img id="img-display" src="" alt="running-ad">
-    
+    <img id="img-display" src="./public/img.png" alt="running-ad" />
+
     <script>
-        const img = document.getElementById("img-display")
-        img.setAttribute("src", )
-    </script> -->
+      let interval;
+      const img = document.getElementById("img-display");
+      interval = setInterval(() => {
+        img.setAttribute("src", `./public/img.${ext}`);
+      }, 3000);
+    </script>
   </body>
 </html>
