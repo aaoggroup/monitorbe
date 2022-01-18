@@ -27,6 +27,7 @@ app.post("/newimage", async (req, res) => {
   })
     .then((info) => {
       console.log("all done", info);
+      res.status(200).send("Ad streamed");
     })
     .catch((error, response, body) => {
       console.log("something goes bad!");
