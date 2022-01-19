@@ -6,16 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Running Ad Display</title>
+    <style>
+      #img-display {
+        width: 500px;
+        height: 500px;
+      }
+    </style>
   </head>
   <body>
     <img id="img-display" src="./public/img.png" alt="running-ad" />
-
-    <script>
-      let interval;
-      const img = document.getElementById("img-display");
-      interval = setInterval(() => {
-        img.setAttribute("src", `./public/img.${ext}`);
-      }, 3000);
-    </script>
   </body>
 </html>
